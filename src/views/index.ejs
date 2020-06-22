@@ -6,8 +6,8 @@
 </div>
 <br><a href="/transfer">Transfer</a>
 
-<%- include('{ account: accounts.savings }'); %>
-<%- include('{ account: accounts.checking }'); %>
-<%- include('{ account: accounts.credit }'); %>
+<%- include('summary', { account: accounts.savings }); %>
+<%- include('summary', { account: accounts.checking }); %>
+<%- include('summary', { account: accounts.credit }); %>
 
 <%- include('footer'); %>
