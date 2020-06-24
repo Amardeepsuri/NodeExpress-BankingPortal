@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const rewire = require('rewire');
 const R = require('ramda');
+const assert = require('assert');
 
 describe('Read user data', () => {
   it('should read user data @app-read-user-data', () => {

@@ -1,4 +1,5 @@
 const R = require('ramda');
+const assert = require('assert');
 
 describe('Updated Index Route', () => {
   let spy;

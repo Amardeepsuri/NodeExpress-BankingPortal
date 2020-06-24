@@ -1,4 +1,5 @@
 const R = require('ramda');
+const assert = require('assert');
 
 describe('app.js contains a Profile Route', () => {
   let spy;

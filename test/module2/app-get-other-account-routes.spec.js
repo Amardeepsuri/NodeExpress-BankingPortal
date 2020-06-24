@@ -1,4 +1,5 @@
 const R = require('ramda');
+const assert = require('assert');
 
 describe('Checking and Credit Routes', () => {
   let creditStack;

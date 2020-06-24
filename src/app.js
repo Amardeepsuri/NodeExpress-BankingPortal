@@ -14,6 +14,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.use(express.static(__dirname + '/public'));
+app.use(express.urlencoded({extended=true}));
 
 app.get('/', function(req, res,) {res.render('index', {title: 'Account Summary', accounts: accounts}); });
 
@@ -22,6 +23,9 @@ app.get('/checking', function(req, res,) {res.render('account', {account: accoun
 app.get('/credit', function(req, res,) {res.render('account', {account: accounts.credit}); });
 
 app.get('/profile', function(req, res,) {res.render('profile', {user: users[0]}); });
+
+app.get('/transfer', function(req, res,) {res.render('transfer'); });
+app.post('/transfer', function(req, res,) {res.render('transfer', {user: users[0]}); });
 
 app.listen(port, () => console.log(`PS Project Running on port ${port}`));
 

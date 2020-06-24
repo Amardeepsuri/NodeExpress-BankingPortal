@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const ejs = require('ejs');
+const assert = require('assert');
 
 describe('Update `index` view', () => {
   it('should update the index view with account summaries @index-ejs-update-view', () => {
